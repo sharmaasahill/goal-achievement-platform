@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import axios from "axios";
+import api from "../api";
 
 const Card = ({ className = "", children }) => (
     <div className={`bg-card/70 backdrop-blur border border-white/5 rounded-2xl shadow-soft ${className}`}>
@@ -60,7 +60,7 @@ export default function VerifyEmail() {
         setMessage("");
 
         try {
-            const response = await axios.post("http://localhost:5000/api/auth/verify", { token });
+            const response = await api.post("/auth/verify", { token });
             setMessage(response.data.message);
             setTimeout(() => {
                 navigate("/");
@@ -84,7 +84,7 @@ export default function VerifyEmail() {
         setMessage("");
 
         try {
-            const response = await axios.post("http://localhost:5000/api/auth/resend-verification", { email });
+            const response = await api.post("/auth/resend-verification", { email });
             setMessage(response.data.message);
         } catch (error) {
             setError(error.response?.data?.error || "Failed to resend verification");

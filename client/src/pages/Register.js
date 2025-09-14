@@ -1,6 +1,6 @@
 import { useState } from "react";
-import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
+import api from "../api";
 
 const Card = ({ className = "", children }) => (
     <div className={`bg-card/70 backdrop-blur border border-white/5 rounded-2xl shadow-soft ${className}`}>
@@ -63,7 +63,7 @@ export default function Register() {
         
         setLoading(true);
         try {
-            const response = await axios.post("http://localhost:5000/api/auth/register", form);
+            const response = await api.post("/auth/register", form);
             alert("User Registered Successfully! Please verify your email.");
             // In development, show the token
             if (response.data.verificationToken) {

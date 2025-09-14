@@ -1,6 +1,6 @@
 import { useState } from "react";
-import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
+import api from "../api";
 
 const Card = ({ className = "", children }) => (
     <div className={`bg-card/70 backdrop-blur border border-white/5 rounded-2xl shadow-soft ${className}`}>
@@ -51,7 +51,7 @@ export default function Login() {
         
         setLoading(true);
         try {
-            const res = await axios.post("http://localhost:5000/api/auth/login", form);
+            const res = await api.post("/auth/login", form);
             localStorage.setItem("token", res.data.token);
             localStorage.setItem("user", JSON.stringify(res.data.user));
             navigate("/dashboard");
