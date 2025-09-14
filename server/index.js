@@ -17,14 +17,25 @@ const app = express();
 const server = createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: process.env.CLIENT_URL || "http://localhost:3000",
+        origin: [
+            process.env.CLIENT_URL || "http://localhost:3000",
+            "https://goal-achievement-platform.vercel.app",
+            "http://localhost:3000"
+        ],
         credentials: true
     }
 });
 
 connectDB();
 
-app.use(cors({ origin: process.env.CLIENT_URL || "http://localhost:3000", credentials: true }));
+app.use(cors({ 
+    origin: [
+        process.env.CLIENT_URL || "http://localhost:3000",
+        "https://goal-achievement-platform.vercel.app",
+        "http://localhost:3000"
+    ], 
+    credentials: true 
+}));
 app.use(express.json());
 app.use(cookieParser());
 // ...
