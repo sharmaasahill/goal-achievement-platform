@@ -17,11 +17,24 @@ const app = express();
 const server = createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: [
-            process.env.CLIENT_URL || "http://localhost:3000",
-            "https://goal-achievement-platform.vercel.app",
-            "http://localhost:3000"
-        ],
+        origin: function (origin, callback) {
+            // Allow requests with no origin (like mobile apps or curl requests)
+            if (!origin) return callback(null, true);
+            
+            // Allow localhost for development
+            if (origin.includes('localhost:3000')) return callback(null, true);
+            
+            // Allow all Vercel subdomains
+            if (origin.includes('.vercel.app')) return callback(null, true);
+            
+            // Allow the main Vercel domain
+            if (origin === 'https://goal-achievement-platform.vercel.app') return callback(null, true);
+            
+            // Allow environment variable URL
+            if (origin === process.env.CLIENT_URL) return callback(null, true);
+            
+            callback(new Error('Not allowed by CORS'));
+        },
         credentials: true
     }
 });
@@ -29,11 +42,24 @@ const io = new Server(server, {
 connectDB();
 
 app.use(cors({ 
-    origin: [
-        process.env.CLIENT_URL || "http://localhost:3000",
-        "https://goal-achievement-platform.vercel.app",
-        "http://localhost:3000"
-    ], 
+    origin: function (origin, callback) {
+        // Allow requests with no origin (like mobile apps or curl requests)
+        if (!origin) return callback(null, true);
+        
+        // Allow localhost for development
+        if (origin.includes('localhost:3000')) return callback(null, true);
+        
+        // Allow all Vercel subdomains
+        if (origin.includes('.vercel.app')) return callback(null, true);
+        
+        // Allow the main Vercel domain
+        if (origin === 'https://goal-achievement-platform.vercel.app') return callback(null, true);
+        
+        // Allow environment variable URL
+        if (origin === process.env.CLIENT_URL) return callback(null, true);
+        
+        callback(new Error('Not allowed by CORS'));
+    },
     credentials: true 
 }));
 app.use(express.json());

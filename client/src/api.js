@@ -8,8 +8,10 @@ const api = axios.create({
         "http://localhost:5000/api",
 });
 
-// Debug: Log the API URL being used
-console.log("API Base URL:", process.env.REACT_APP_API_URL || "http://localhost:5000/api");
+// Debug: Log the API URL being used (remove in production)
+if (process.env.NODE_ENV === 'development') {
+    console.log("API Base URL:", process.env.REACT_APP_API_URL || "http://localhost:5000/api");
+}
 
 api.interceptors.request.use((config) => {
     const token = localStorage.getItem("token");
