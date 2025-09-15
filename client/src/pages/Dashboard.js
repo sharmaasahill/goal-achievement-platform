@@ -266,7 +266,7 @@ export default function Dashboard() {
                                         className="w-full mt-2 text-xs bg-green-500/20 hover:bg-green-500/30 border-green-500/30 text-green-300" 
                                         onClick={markAsComplete}
                                     >
-                                        ✅ Mark Complete
+                                        Mark Complete
                                     </Button>
                                 )}
                                 <Button 
