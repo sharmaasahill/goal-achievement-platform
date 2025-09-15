@@ -216,7 +216,7 @@ export default function Dashboard() {
                     <div className="text-sm text-white/70">Signed in as</div>
                     <div className="flex gap-2">
                         <Button onClick={() => setShowNotifications(true)} className="text-sm" title="Notifications">
-                            🔔
+                            Notifications
                         </Button>
                         <Button onClick={logout} className="text-sm">Logout</Button>
                     </div>
@@ -228,36 +228,36 @@ export default function Dashboard() {
                     {activeGoal && (
                         <>
                             <Button className="w-full" onClick={() => setShowAnalytics(true)}>
-                                📊 Analytics
+                                Analytics
                             </Button>
                             <Button className="w-full" onClick={() => setShowCalendar(true)}>
-                                📅 Calendar
+                                Calendar
                             </Button>
                             <Button className="w-full" onClick={() => setShowVideoChat(true)}>
-                                📹 Video Chat
+                                Video Chat
                             </Button>
                             <Button className="w-full" onClick={() => setShowRealtimeChat(true)}>
-                                ⚡ Real-time Chat
+                                Real-time Chat
                             </Button>
                             <div className="border-t border-white/10 pt-2">
                                 <div className="text-xs uppercase tracking-wider text-white/40 mb-2">Goal Actions</div>
                                 <div className="grid grid-cols-2 gap-2">
                                     <Button className="text-xs" onClick={() => setShowEdit(true)}>
-                                        ✏️ Edit
+                                        Edit
                                     </Button>
                                     <Button className="text-xs" onClick={duplicateGoal}>
-                                        📋 Copy
+                                        Copy
                                     </Button>
                                     <Button className="text-xs" onClick={exportGoal}>
-                                        📤 Export
+                                        Export
                                     </Button>
                                     {activeGoal.status === "active" ? (
                                         <Button className="text-xs" onClick={archiveGoal}>
-                                            📁 Archive
+                                            Archive
                                         </Button>
                                     ) : (
                                         <Button className="text-xs" onClick={reactivateGoal}>
-                                            🔄 Reactivate
+                                            Reactivate
                                         </Button>
                                     )}
                                 </div>
@@ -273,7 +273,7 @@ export default function Dashboard() {
                                     className="w-full mt-2 text-xs bg-red-500/20 hover:bg-red-500/30 border-red-500/30 text-red-300" 
                                     onClick={() => setShowDelete(true)}
                                 >
-                                    🗑️ Delete
+                                    Delete
                                 </Button>
                             </div>
                         </>
@@ -333,13 +333,13 @@ export default function Dashboard() {
                         {activeGoal && (
                             <div className="flex gap-2">
                                 <Button className="text-xs" onClick={() => setShowEdit(true)} title="Edit Goal">
-                                    ✏️
+                                    Edit
                                 </Button>
                                 <Button className="text-xs" onClick={duplicateGoal} title="Duplicate Goal">
-                                    📋
+                                    Copy
                                 </Button>
                                 <Button className="text-xs" onClick={exportGoal} title="Export Goal">
-                                    📤
+                                    Export
                                 </Button>
                             </div>
                         )}

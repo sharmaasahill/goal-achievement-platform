@@ -52,11 +52,11 @@ const VideoChat = ({ goal, onClose }) => {
     const getAvatarEmoji = () => {
         switch (avatarState) {
             case "thinking":
-                return "🤔";
+                return "Thinking";
             case "speaking":
-                return "💬";
+                return "Chat";
             default:
-                return "👨‍🏫";
+                return "AI";
         }
     };
 
@@ -143,15 +143,15 @@ const VideoChat = ({ goal, onClose }) => {
                                             : "bg-white/10 text-white/60 hover:bg-white/20"
                                     }`}
                                 >
-                                    {isAudioOn ? "🎤" : "🎤"}
+                                    {isAudioOn ? "Mic On" : "Mic Off"}
                                 </button>
 
                                 <button className="p-3 rounded-full bg-white/10 text-white/60 hover:bg-white/20 transition">
-                                    📞
+                                    Call
                                 </button>
 
                                 <button className="p-3 rounded-full bg-white/10 text-white/60 hover:bg-white/20 transition">
-                                    ⚙️
+                                    Settings
                                 </button>
                             </div>
                         </div>
@@ -167,7 +167,7 @@ const VideoChat = ({ goal, onClose }) => {
                         <div className="flex-1 p-4 space-y-3 overflow-y-auto">
                             <div className="flex items-start gap-3">
                                 <div className="w-8 h-8 bg-accent/20 rounded-full flex items-center justify-center">
-                                    👨‍🏫
+                                    AI
                                 </div>
                                 <div className="flex-1">
                                     <p className="text-sm text-white/80">
@@ -191,7 +191,7 @@ const VideoChat = ({ goal, onClose }) => {
 
                             <div className="flex items-start gap-3">
                                 <div className="w-8 h-8 bg-accent/20 rounded-full flex items-center justify-center">
-                                    👨‍🏫
+                                    AI
                                 </div>
                                 <div className="flex-1">
                                     <p className="text-sm text-white/80">
@@ -204,7 +204,7 @@ const VideoChat = ({ goal, onClose }) => {
                             {isTyping && (
                                 <div className="flex items-start gap-3">
                                     <div className="w-8 h-8 bg-accent/20 rounded-full flex items-center justify-center">
-                                        👨‍🏫
+                                        AI
                                     </div>
                                     <div className="flex-1">
                                         <div className="flex gap-1">

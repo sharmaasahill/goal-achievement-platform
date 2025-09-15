@@ -63,7 +63,7 @@ const RealtimeChat = ({ goal, userId, onClose }) => {
     };
 
     const getMessageIcon = (type) => {
-        return type === 'ai' ? '👨‍🏫' : '👤';
+        return type === 'ai' ? 'AI' : 'User';
     };
 
     const getMessageStyle = (type) => {
@@ -127,7 +127,7 @@ const RealtimeChat = ({ goal, userId, onClose }) => {
                     {typingUsers.length > 0 && (
                         <div className="flex items-start gap-3">
                             <div className="w-8 h-8 bg-accent/20 rounded-full flex items-center justify-center text-sm">
-                                👨‍🏫
+                                AI
                             </div>
                             <div className="bg-panel/70 border border-white/10 rounded-2xl px-4 py-3">
                                 <div className="flex gap-1">
@@ -164,7 +164,7 @@ const RealtimeChat = ({ goal, userId, onClose }) => {
                     </div>
                     {!isConnected && (
                         <p className="text-xs text-red-400 mt-2">
-                            ⚠️ Connection lost. Trying to reconnect...
+                            Connection lost. Trying to reconnect...
                         </p>
                     )}
                 </div>

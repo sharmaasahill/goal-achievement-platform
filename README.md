@@ -2,27 +2,27 @@
 
 A comprehensive full-stack web application that helps users break down large objectives into manageable learning journeys with AI-powered tutoring support.
 
-## 🚀 Live Demo
+## Live Demo
 
 - **Frontend:** [https://goal-achievement-platform.vercel.app](https://goal-achievement-platform.vercel.app)
 - **Backend API:** [https://goal-achievement-platform.onrender.com](https://goal-achievement-platform.onrender.com)
 - **GitHub Repository:** [https://github.com/sharmaasahill/goal-achievement-platform](https://github.com/sharmaasahill/goal-achievement-platform)
 
-## 🎯 Demo Account
+## Demo Account
 
 **Email:** `demo@example.com`  
 **Password:** `Demo123!`
 
-## ✨ Features
+## Features
 
-### 🔐 Authentication System
+### Authentication System
 - User registration and login with email/password
 - Password strength validation
 - Email verification system
 - JWT-based session management
 - Secure logout functionality
 
-### 🎯 Goal Management System
+### Goal Management System
 - **Intelligent Goal Creation:** Input your objective (e.g., "Learn machine learning")
 - **Smart Journey Breakdown:** System automatically breaks goals into 6-week to 6-month journeys
 - **Customizable Timelines:** Adjust duration and milestones as needed
@@ -30,33 +30,33 @@ A comprehensive full-stack web application that helps users break down large obj
 - **Progress Tracking:** Track completion for each chunk
 - **Dependency Management:** Handle dependencies between learning modules
 
-### 📅 Check-in System
+### Check-in System
 - **Flexible Frequency:** Configurable check-in intervals (daily, weekly, bi-weekly)
 - **Calendar Integration:** Visual calendar for scheduling check-ins
 - **Reminder Notifications:** Automated progress reminders
 - **Progress Assessment:** Built-in forms for progress evaluation
 
-### 🤖 AI Avatar Tutor
+### AI Avatar Tutor
 - **Conversational Interface:** 2-way video chat simulation with AI avatar
 - **Real-time Chat:** Instant messaging with context-aware responses
 - **Learning Modules:** Theoretical content delivery and interactive Q&A
 - **Personalized Examples:** AI adapts explanations to user's specific goals
 - **Practice Problems:** AI generates relevant practice exercises
 
-### 📊 Progress Tracking & Analytics
+### Progress Tracking & Analytics
 - **Comprehensive Data Recording:** All interactions and progress tracked
 - **Learning Velocity:** Calculate and display learning speed metrics
 - **Completion Rates:** Track success rates per module
 - **Session Summaries:** Auto-generated summaries of learning sessions
 - **Progress Visualization:** Charts and graphs for progress insights
 
-### 🔔 Real-time Features
+### Real-time Features
 - **Live Chat:** Real-time messaging with typing indicators
 - **Progress Updates:** Instant progress synchronization
 - **Notifications:** Real-time notification system
 - **WebSocket Integration:** Seamless real-time communication
 
-## 🛠️ Technical Architecture
+## Technical Architecture
 
 ### Frontend
 - **Framework:** React.js with React Router
@@ -79,7 +79,7 @@ A comprehensive full-stack web application that helps users break down large obj
 - **Checkins:** Progress tracking and assessments
 - **Notifications:** User notifications and reminders
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js (v14 or higher)
@@ -131,7 +131,7 @@ A comprehensive full-stack web application that helps users break down large obj
    - Frontend: http://localhost:3000
    - Backend API: http://localhost:5000
 
-## 📱 User Journey Example
+## User Journey Example
 
 1. **Registration:** New user signs up with email/password
 2. **Goal Setting:** "I want to become a data scientist"
@@ -141,7 +141,7 @@ A comprehensive full-stack web application that helps users break down large obj
 6. **Application:** Avatar helps apply concepts to user's specific dataset
 7. **Progress Tracking:** System records learning, provides summary and next steps
 
-## 🔧 API Endpoints
+## API Endpoints
 
 ### Authentication
 - `POST /api/auth/register` - User registration
@@ -170,7 +170,7 @@ A comprehensive full-stack web application that helps users break down large obj
 - `PATCH /api/notifications/:id/read` - Mark notification as read
 - `DELETE /api/notifications/:id` - Delete notification
 
-## 🎨 Design System
+## Design System
 
 ### Color Palette
 - **Background:** `#0f172a` (Dark slate)
@@ -182,7 +182,7 @@ A comprehensive full-stack web application that helps users break down large obj
 - **Font Family:** Inter (Google Fonts)
 - **Responsive Design:** Mobile-first approach
 
-## 🔒 Security Features
+## Security Features
 
 - **Password Hashing:** bcryptjs with salt rounds
 - **JWT Authentication:** Secure token-based authentication
@@ -190,14 +190,14 @@ A comprehensive full-stack web application that helps users break down large obj
 - **Input Validation:** Server-side validation for all inputs
 - **Environment Variables:** Secure configuration management
 
-## 📈 Performance Optimizations
+## Performance Optimizations
 
 - **Code Splitting:** React lazy loading
 - **Image Optimization:** Optimized assets
 - **Caching:** Efficient data caching strategies
 - **Real-time Updates:** WebSocket for instant updates
 
-## 🧪 Testing
+## Testing
 
 The application includes comprehensive error handling and validation:
 - Form validation on both client and server
@@ -205,7 +205,7 @@ The application includes comprehensive error handling and validation:
 - Real-time connection error handling
 - Database connection error management
 
-## 🚀 Deployment
+## Deployment
 
 ### Frontend (Vercel)
 - Automatic deployment from GitHub
@@ -217,11 +217,11 @@ The application includes comprehensive error handling and validation:
 - Environment variables configured
 - MongoDB Atlas integration
 
-## 📝 License
+## License
 
 This project is created for educational and demonstration purposes.
 
-## 👨‍💻 Developer
+## Developer
 
 **Sahil Sharma**  
 - GitHub: [@sharmaasahill](https://github.com/sharmaasahill)
@@ -229,4 +229,4 @@ This project is created for educational and demonstration purposes.
 
 ---
 
-*Built with ❤️ using React, Node.js, MongoDB, and modern web technologies.*
+*Built using React, Node.js, MongoDB, and modern web technologies.*

@@ -46,15 +46,15 @@ const NotificationCenter = ({ userId }) => {
     const getNotificationIcon = (type) => {
         switch (type) {
             case "checkin":
-                return "📅";
+                return "Check-in";
             case "reminder":
-                return "⏰";
+                return "Reminder";
             case "progress":
-                return "📊";
+                return "Progress";
             case "achievement":
-                return "🏆";
+                return "Achievement";
             default:
-                return "📢";
+                return "Notification";
         }
     };
 
