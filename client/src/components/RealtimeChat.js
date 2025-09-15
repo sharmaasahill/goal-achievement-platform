@@ -164,7 +164,7 @@ const RealtimeChat = ({ goal, userId, onClose }) => {
                     </div>
                     {!isConnected && (
                         <p className="text-xs text-red-400 mt-2">
-                            ⚠️ Connection lost. Trying to reconnect...
+                            Connection lost. Trying to reconnect...
                         </p>
                     )}
                 </div>

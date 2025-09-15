@@ -2,27 +2,27 @@
 
 A comprehensive full-stack web application that helps users break down large objectives into manageable learning journeys with AI-powered tutoring support.
 
-## 🚀 Live Demo
+## Live Demo
 
 - **Frontend:** [https://goal-achievement-platform.vercel.app](https://goal-achievement-platform.vercel.app)
 - **Backend API:** [https://goal-achievement-platform.onrender.com](https://goal-achievement-platform.onrender.com)
 - **GitHub Repository:** [https://github.com/sharmaasahill/goal-achievement-platform](https://github.com/sharmaasahill/goal-achievement-platform)
 
-## 🎯 Demo Account
+## Demo Account
 
 **Email:** `demo@example.com`  
 **Password:** `Demo123!`
 
 ## ✨ Features
 
-### 🔐 Authentication System
+### Authentication System
 - User registration and login with email/password
 - Password strength validation
 - Email verification system
 - JWT-based session management
 - Secure logout functionality
 
-### 🎯 Goal Management System
+### Goal Management System
 - **Intelligent Goal Creation:** Input your objective (e.g., "Learn machine learning")
 - **Smart Journey Breakdown:** System automatically breaks goals into 6-week to 6-month journeys
 - **Customizable Timelines:** Adjust duration and milestones as needed
@@ -30,20 +30,20 @@ A comprehensive full-stack web application that helps users break down large obj
 - **Progress Tracking:** Track completion for each chunk
 - **Dependency Management:** Handle dependencies between learning modules
 
-### 📅 Check-in System
+### Check-in System
 - **Flexible Frequency:** Configurable check-in intervals (daily, weekly, bi-weekly)
 - **Calendar Integration:** Visual calendar for scheduling check-ins
 - **Reminder Notifications:** Automated progress reminders
 - **Progress Assessment:** Built-in forms for progress evaluation
 
-### 🤖 AI Avatar Tutor
+### AI Avatar Tutor
 - **Conversational Interface:** 2-way video chat simulation with AI avatar
 - **Real-time Chat:** Instant messaging with context-aware responses
 - **Learning Modules:** Theoretical content delivery and interactive Q&A
 - **Personalized Examples:** AI adapts explanations to user's specific goals
 - **Practice Problems:** AI generates relevant practice exercises
 
-### 📊 Progress Tracking & Analytics
+### Progress Tracking & Analytics
 - **Comprehensive Data Recording:** All interactions and progress tracked
 - **Learning Velocity:** Calculate and display learning speed metrics
 - **Completion Rates:** Track success rates per module
@@ -56,7 +56,7 @@ A comprehensive full-stack web application that helps users break down large obj
 - **Notifications:** Real-time notification system
 - **WebSocket Integration:** Seamless real-time communication
 
-## 🛠️ Technical Architecture
+## Technical Architecture
 
 ### Frontend
 - **Framework:** React.js with React Router
@@ -79,7 +79,7 @@ A comprehensive full-stack web application that helps users break down large obj
 - **Checkins:** Progress tracking and assessments
 - **Notifications:** User notifications and reminders
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js (v14 or higher)
@@ -170,7 +170,7 @@ A comprehensive full-stack web application that helps users break down large obj
 - `PATCH /api/notifications/:id/read` - Mark notification as read
 - `DELETE /api/notifications/:id` - Delete notification
 
-## 🎨 Design System
+## Design System
 
 ### Color Palette
 - **Background:** `#0f172a` (Dark slate)
@@ -205,7 +205,7 @@ The application includes comprehensive error handling and validation:
 - Real-time connection error handling
 - Database connection error management
 
-## 🚀 Deployment
+## Deployment
 
 ### Frontend (Vercel)
 - Automatic deployment from GitHub
@@ -217,11 +217,11 @@ The application includes comprehensive error handling and validation:
 - Environment variables configured
 - MongoDB Atlas integration
 
-## 📝 License
+## License
 
 This project is created for educational and demonstration purposes.
 
-## 👨‍💻 Developer
+## Developer
 
 **Sahil Sharma**  
 - GitHub: [@sharmaasahill](https://github.com/sharmaasahill)
@@ -229,4 +229,4 @@ This project is created for educational and demonstration purposes.
 
 ---
 
-*Built with ❤️ using React, Node.js, MongoDB, and modern web technologies.*
+*Built with React, Node.js, MongoDB, and modern web technologies.*
